@@ -1,0 +1,24 @@
+name: PrestigePerks
+author: MineHorizon Development Team
+version: 1.0-SNAPSHOT
+main: com.minehorizon.prestigeperks.PrestigePerks
+api-version: 1.15
+depend:
+  - CombatLogX
+
+permissions:
+  prestigeperks.givetoken:
+    description: Permission to give users a prestige perk token
+
+commands:
+  perks:
+    description: Opens PrestigePerks GUI
+  prestigeperk:
+    description: Base command for giving a user a Prestige Perk Token
+    aliases: [prestigeperks,pperks]
+  autopickup:
+    description: Command for enabling or disabling AutoPickup Prestige Perk!
+    aliases: [ap,autop]
+  autosmelt:
+    description: Command for enabling or disabling AutoSmelt Prestige Perk!
+    aliases: [as]

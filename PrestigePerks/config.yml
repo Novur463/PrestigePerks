@@ -1,0 +1,172 @@
+gui:
+  size: 45
+  panecolor: 2
+  items:
+    autosmelt:
+      material: 'FURNACE'
+      name: '&8( &8&l+ &8)    &cAutoSmelt'
+      amount: 1
+      slot: 10
+      lore:
+        - ''
+        - ''
+        - '&8&l>>  &aPurchase this perk to be granted'
+        - '&8&l>>  &athe ability to instantly &csmelt'
+        - '&8&l>>  &ayour ores! Use the command'
+        - '&8&l>>  &c/autosmelt &ato enable or disable'
+        - '&8&l>>  &athis perk!'
+      blockedName: '&cAutoSmelt'
+    nofoodloss:
+      material: 'COOKED_CHICKEN'
+      name: '&8( &8&l+ &8)    &bSatiated'
+      amount: 1
+      slot: 13
+      lore:
+        - ''
+        - ''
+        - '&8&l>>  &aPurchase this perk to be granted the'
+        - '&8&l>>  &aability to never need food again! '
+        - '&8&l>>  &aYour hunger will be &a&linstantly &asated!'
+      blockedName: '&bSatiated'
+    doubledrops:
+      material: 'DIAMOND_BLOCK'
+      name: '&8( &8&l+ &8)    &3Double Drops'
+      amount: 1
+      slot: 16
+      lore:
+        - ''
+        - ''
+        - '&8&l>>  &aPurchase this perk to have a chance'
+        - '&8&l>>  &ato receive &62x the amount of normal'
+        - '&8&l>>  &ablock drops!'
+      blockedName: '&3Double Drops'
+    jumpboost:
+      material: 'RABBIT_FOOT'
+      name: '&8( &8&l+ &8)    &fDouble Jump'
+      amount: 1
+      slot: 28
+      lore:
+        - ''
+        - ''
+        - '&8&l>>  &aPurchase this perk to be granted an'
+        - '&8&l>>  &ainfinite &fJump Boos twhile not in combat!'
+      blockedName: '&fDouble Jump'
+    autopickup:
+      material: 'HOPPER'
+      name: '&8( &8&l+ &8)    &3Auto-Pickup'
+      amount: 1
+      slot: 31
+      lore:
+        - ''
+        - ''
+        - '&8&l>>  &aPurchase this perk to be granted the'
+        - '&8&l>>  &aability to toggle whether you &a&lautomatically'
+        - '&8&l>>  &apickup items! Use the command /toggledrops'
+        - '&8&l>>  &ato enable or disable this perk!'
+      blockedName: '&3Magnetism'
+    headhunter:
+      material: 'SKELETON_SKULL'
+      name: '&8( &8&l+ &8)    &cHeadhunter'
+      amount: 1
+      slot: 34
+      lore:
+        - ''
+        - ''
+        - '&8&l>>  &aPurchase this perk to gain the ability'
+        - '&8&l>>  &ato receive a player''s head after you'
+        - '&8&l>>  &ckill &athem!'
+      blockedName: '&cHeadhunter'
+    blocked:
+      material: 'BARRIER'
+      name: '&c&lERROR! &cYou cannot purchase perk &7{perk} &cas you already own it!'
+      lore:
+        - ''
+        - ''
+        - '&8&l>>  &cYou cannot purchase a perk you already own!'
+        - '&8&l>>  &cRight-Click this perk to disable it, and receive your'
+        - '&8&l>>  &7Prestige Perk Token &cback!'
+
+token:
+  material: 'PAPER'
+  name: '&8( &8&l+ &8)    &dPrestige Perk Token'
+  lore:
+    - ''
+    - '&8&l>>  &aThis is a &dPrestige Perk Token&a! Right-click to redeem'
+    - '&8&l>>  &ait and select the perk you wish to redeem it on!'
+    - '&8&l>>  &aTokens are earned when Prestiging! Keep an eye out'
+    - '&8&l>>  &awhen you Prestige to claim your free perk!'
+    - ''
+    - ''
+    - '&8&l>>  &cThis item is &c&lUUID-Locked&c, it cannot be redeemed by someone'
+    - '&8&l>>  &cwithout the following UUID:'
+    - '&8&l>>  &7{uuid}'
+
+chances:
+  headhunter: '0.20'
+  doubledrops: '0.0025'
+
+doubledrops:
+  affected:
+    - 'LAPIS_ORE'
+    - 'REDSTONE_ORE'
+    - 'DIAMOND_ORE'
+    - 'DIAMOND_BLOCK'
+    - 'COAL_ORE'
+    - 'IRON_ORE'
+    - 'IRON_BLOCK'
+    - 'GOLD_ORE'
+    - 'GOLD_BLOCK'
+    - 'EMERALD_ORE'
+    - 'EMERALD_BLOCK'
+
+woodRegions:
+  - 'influmber'
+  - 'genpopwood'
+  - 'chapelwoodfarm'
+  - 'courtyardwoodfarm'
+
+applicableRegions:
+  - 'influmber'
+  - 'infirmarymine'
+  - 'genpopmine'
+  - 'genpopwood'
+  - 'chapelwoodfarm'
+  - 'chapelmine'
+  - 'courtyardmine'
+  - 'courtyardwoodfarm'
+  - 'crookmine'
+  - 'jailbirdmine'
+  - 'dealermine'
+  - 'kingpinmine'
+  - 'fugitivemine'
+
+autoEnablePerks: true
+
+fortuneableMaterials:
+  - 'DIAMOND_ORE'
+  - 'EMERALD_ORE'
+  - 'COAL_ORE'
+  - 'REDSTONE_ORE'
+  - 'LAPIS_ORE'
+
+messages:
+  noPermission: '&c&lERROR &7&l>> &cYou do not have permission to perform this command!'
+  invalidArgs: '&c&lERROR &7&l>> &cIncorrect usage! /prestigeperk <give|givetoken> <player>'
+  invalidPlayer: '&c&lERROR &7&l>> &cPlayer &c&l{player} &ccould not be found!'
+  receivedToken: '&dPrestigePerks &7&l>> &7You have been given 1 Prestige Perk Token!'
+  gaveToken: '&dPrestigePerks &7&l>> &7You have successfully given &6{player} &7a Prestige Perk Token!'
+  perkAlreadyBought: '&c&lERROR &7&l>> &cYou cannot purchase a Perk you already own!'
+  successfulPurchase: '&dPrestigePerks &7&l>> &7You have &7successfully &apurchased &7the {perk} &7Perk!'
+  perkRefunded: '&dPrestigePerks &7&l>> &7You have successfully &crefunded &7the {perk} Perk!'
+  itemNotToken: '&c&lERROR &7&l>> &cYou cannot purchase a &7Perk &cwithout a &7Perk Token&c!'
+  headhunterProc: '&dPrestigePerks &cHeadHunter &7&l>> &cYou have just taken &6{target}''&cs skull!'
+  tokenUUIDLocked: '&c&lERROR &7&l>> &cThis token is &c&lUUID-Locked&c! You cannot redeem a &7Prestige Perk Token &cyou do not own!'
+  autoPickupEnabled: '&dPrestigePerks &3AutoPickup &7&l>> &aEnabled&7.'
+  autoPickupDisabled: '&dPrestigePerks &3AutoPickup &7&l>> &cDisabled&7.'
+  apAutoEnabled: '&dPrestigePerks &3AutoPickup &7&l>> &7Automatically &aenabled&7.'
+  cannotRefundOP: '&c&lERROR &7&l>> &cYou cannot redeem a perk as you are currently OP!'
+  autosmeltEnabled: '&dPrestigePerks &cAutoSmelt &7&l>> &7AutoSmelt &aenabled&7.'
+  autosmeltDisabled: '&dPrestigePerks &cAutoSmelt &7&l>> &7Autosmelt &cdisabled&7.'
+  inventoryFull: '&c&lERROR &7&l>> &cYour inventory is full, so you could not be given a &7Prestige Perk Token&c!'
+  targetInventoryFull: '&c&lERROR &7&l>> &cPlayer &6{target}&c''s inventory is full, so they could not be given a &7Prestige Perk Token&c!'
+  asAutoEnabled: '&dPrestigePerks &cAutoSmelt &7&l>> &aAutomatically enabled.'
